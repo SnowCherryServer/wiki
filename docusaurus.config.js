@@ -13,11 +13,11 @@ const config = {
     // 标题前缀
     titlePrefix: "主页",
     // 开始按钮文字
-    start: "快速开始 🥵",
+    start: "开始阅读 🤔",
   },
 
-  title: '笨蛋MC开服教程',
-  tagline: '一群笨蛋们写的Minecraft开服教程',
+  title: 'SnowCherry Wiki',
+  tagline: '一群鸽子编写的教程',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -114,7 +114,7 @@ const config = {
             items: [
               {
                 label: 'QQ群',
-                href: 'https://qm.qq.com/q/dENGavSflK',
+                href: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VrZL2H0zNxo229RH3Y7SDdleiurLyN_K&authKey=MaV6NC4QLkQ3XJ37KMUP8yqRplg6TrVeTpcJ%2FqQzSH3jbF9TYe0PLdPajSf93Fyy&noverify=0&group_code=777243574',
               },
             ],
           },
@@ -123,13 +123,13 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/postyizhan/NitWikit',
+                href: 'https://github.com/SnowCherryServer/wiki',
               },
             ],
           },
         ],
         // 底部版权信息
-        copyright: `Copyright © ${new Date().getFullYear()} <b>postyizhan</b>, All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} <b>SnowCherryServer</b>, All Rights Reserved.`,
       },
       // 深浅主题
       prism: {
