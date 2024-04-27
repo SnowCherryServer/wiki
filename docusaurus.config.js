@@ -28,8 +28,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'postyizhan', // Usually your GitHub org/user name.
-  projectName: '傻瓜指南', // Usually your repo name.
+  organizationName: 'SnowCherry', // Usually your GitHub org/user name.
+  projectName: '雪服文档', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
