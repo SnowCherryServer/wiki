@@ -114,7 +114,7 @@ const config = {
             items: [
               {
                 label: 'QQ群',
-                href: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VrZL2H0zNxo229RH3Y7SDdleiurLyN_K&authKey=MaV6NC4QLkQ3XJ37KMUP8yqRplg6TrVeTpcJ%2FqQzSH3jbF9TYe0PLdPajSf93Fyy&noverify=0&group_code=777243574',
+                href: 'https://qm.qq.com/q/YRVtpEwVCa',
               },
             ],
           },
