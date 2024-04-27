@@ -86,7 +86,7 @@ const config = {
           },
           // Github
           {
-            href: "https://github.com/postyizhan/NitWikit",
+            href: "https://github.com/SnowCherryServer/wiki",
             className: "header-github-link",
             position: "right",
           },
