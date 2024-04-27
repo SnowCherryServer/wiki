@@ -4,20 +4,20 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '简单易用',
+    title: '简单高效',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        MC就这点配置有啥难的.
+        一键定位查看需要的内容
       </>
     ),
   },
   {
-    title: '文档详细',
+    title: '文档开放',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        看完文档学不会怎么开服说明你是个傻逼.
+        社区成员(玩家)共同维护本文档
       </>
     ),
   },
