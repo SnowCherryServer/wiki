@@ -5,10 +5,9 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: '简单高效',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        一键定位查看需要的内容
+        一键精准定位查看需要的内容
       </>
     ),
   },
