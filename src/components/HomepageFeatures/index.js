@@ -33,7 +33,7 @@ function Feature({title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3 style={{ fontSize: '24px', color: '#842e5c' }}>{title}</h3>
         <p>{description}</p>
       </div>
     </div>
