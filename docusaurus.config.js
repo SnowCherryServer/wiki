@@ -50,7 +50,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/postyizhan/NitWikit/'
+          editUrl: 'https://github.com/SnowCherryServer/wiki/'
         },
         blog: false,
         theme: {
