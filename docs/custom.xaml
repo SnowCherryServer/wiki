@@ -1,0 +1,143 @@
+<!-- <StackPanel xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:PCL2" > -->
+<StackPanel Margin="0,-10,0,0" xmlns:sys ="clr-namespace:System;assembly=mscorlib">
+<!--Animations Starts-->
+<StackPanel.Triggers>
+
+</StackPanel.Triggers>
+<StackPanel.Resources>
+<!--Styles Starts-->
+<Style TargetType="StackPanel" x:Key="ContentStack" >
+<Setter Property="Margin" Value="20,40,20,20"/>
+</Style><Style TargetType="local:MyCard" x:Key="Card" >
+<Setter Property="Margin" Value="0,5"/>
+</Style><Style TargetType="FlowDocumentScrollViewer" >
+<Setter Property="IsSelectionEnabled" Value="False"/>
+<Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+<Setter Property="Margin" Value="0"/>
+</Style><Style TargetType="FlowDocument" >
+<Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+<Setter Property="FontSize" Value="14"/>
+<Setter Property="TextAlignment" Value="Left"/>
+</Style><Style TargetType="TextBox" x:Key="InlineCode">
+    <Setter Property="FontSize" Value="14" />
+    <Setter Property="IsReadOnly" Value="True" />
+    <Setter Property="Margin" Value="2,0,2,-4" />
+    <Setter Property="FontFamily" Value="Consolas"/>
+    <Setter Property="Height" Value="18"/>
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="TextBox">
+                <Border Background="{DynamicResource ColorBrush6}" Opacity="0.9"
+                    BorderBrush="{DynamicResource ColorBrush4}" BorderThickness="0"
+                    CornerRadius="5" Padding="4,0.2"> 
+                    <ScrollViewer x:Name="PART_ContentHost" Focusable="false"
+                        HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" />
+                </Border>
+                <ControlTemplate.Triggers>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style><Style TargetType="TextBlock" >
+<Setter Property="TextWrapping" Value="Wrap"/>
+<Setter Property="HorizontalAlignment" Value="Left"/>
+<Setter Property="FontSize" Value="14"/>
+<Setter Property="Foreground" Value="Black"/>
+</Style><Style TargetType="List" >
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+<Setter Property="Margin" Value="20,0,0,0"/>
+<Setter Property="MarkerStyle" Value="1"/>
+<Setter Property="Padding" Value="0"/>
+</Style><Style TargetType="ListItem" >
+<Setter Property="Foreground" Value="Black"/>
+<Setter Property="LineHeight" Value="22"/>
+</Style><Style TargetType="Paragraph" x:Key="H2" >
+<Setter Property="FontSize" Value="22"/>
+<Setter Property="Margin" Value="0,10,0,5"/>
+<Setter Property="FontWeight" Value="Bold"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+</Style><Style TargetType="Paragraph" x:Key="H3" >
+<Setter Property="FontSize" Value="18"/>
+<Setter Property="Margin" Value="0,5,0,5"/>
+<Setter Property="FontWeight" Value="Bold"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+</Style><Style TargetType="Paragraph" x:Key="H4" >
+<Setter Property="FontSize" Value="16"/>
+<Setter Property="Margin" Value="0,3,0,5"/>
+<Setter Property="FontWeight" Value="Bold"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+</Style><Style TargetType="Border" x:Key="Quote" >
+<Setter Property="BorderThickness" Value="5,0,0,0"/>
+<Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+<Setter Property="Padding" Value="10,5"/>
+<Setter Property="Margin" Value="0,5"/>
+</Style>
+</StackPanel.Resources>
+<local:MyCard Title="" CanSwap="True" IsSwaped="False" Style="{StaticResource Card}" >
+<StackPanel Style="{StaticResource ContentStack}">
+<FlowDocumentScrollViewer >
+<FlowDocument>
+<Paragraph Style="{StaticResource H2}">更新简述</Paragraph><Paragraph Style="{StaticResource H3}">常规更新</Paragraph><Paragraph>    本次更新主要为正式版加入了投票获胜生物犰狳，其掉落物犰狳鳞甲，以及鳞甲制品狼铠，能够保护玩家驯服的狼。</Paragraph><Paragraph>    除此之外还新增了一系列狼的变体，在不同的群系可能会生成不同的狼。</Paragraph><Paragraph>    <Bold>从本版本开始正式版开始要求 Java 21 以及 64 位操作系统</Bold></Paragraph><Paragraph Style="{StaticResource H3}">新特性</Paragraph><List>
+<ListItem><Paragraph>加入了犰狳以及犰狳鳞甲</Paragraph></ListItem>
+<ListItem><Paragraph>加入了狼铠</Paragraph></ListItem>
+<ListItem><Paragraph>加入了狼变体</Paragraph></ListItem>
+<ListItem><Paragraph>增加了四个与犰狳和狼铠有关的进度</Paragraph></ListItem>
+</List><Paragraph Style="{StaticResource H4}">更改</Paragraph><List>
+<ListItem><Paragraph>游戏内部分 UI 有了全新外观。</Paragraph></ListItem>
+<ListItem><Paragraph>减少了默认出生点区块的大小，现在大小也可以通过配置改变</Paragraph></ListItem>
+<ListItem><Paragraph>更改了驯化的狼的伤害与生命值</Paragraph></ListItem>
+<ListItem><Paragraph>调整了狼的生成条件，使其可以在砂土和灰化土方块上生成</Paragraph></ListItem>
+<ListItem><Paragraph>调整了狼项圈的图层使其更好配合新的狼铠</Paragraph></ListItem>
+<ListItem><Paragraph>调整了在雪林中生成的友好生物，现在只有兔子，狐狸和狼能够在此生成</Paragraph></ListItem>
+<ListItem><Paragraph>一些对现存的方块、物品和实体的小型更改</Paragraph></ListItem>
+<ListItem><Paragraph>增加了 CJK 字符使用日文字形的选项</Paragraph></ListItem>
+<ListItem><Paragraph>增加了 Viossa （一种人造语言）的支持</Paragraph></ListItem>
+<ListItem><Paragraph>当实体离开或进入末地时，它们到达的区域现在会保持加载后状态 15 秒以匹配下界传送门的行为</Paragraph></ListItem>
+<ListItem><Paragraph>改善了游戏的性能表现</Paragraph></ListItem>
+<ListItem><Paragraph>改善了在保存和载入时出错的处理</Paragraph></ListItem>
+</List><Paragraph Style="{StaticResource H4}">技术性更改</Paragraph><List>
+<ListItem><Paragraph><Bold>【重要】现在游戏需求 Java 21</Bold></Paragraph></ListItem>
+<ListItem><Paragraph>游戏现在需求 64 位操作系统</Paragraph></ListItem>
+<ListItem><Paragraph>数据包版本现在为 41</Paragraph><List>
+<ListItem><Paragraph>重命名了 <TextBox Style="{StaticResource InlineCode}">scute</TextBox> 为 <TextBox Style="{StaticResource InlineCode}">turtle_scute</TextBox></Paragraph></ListItem>
+<ListItem><Paragraph>更改了物品堆叠数据格式，包括物品堆叠组件</Paragraph></ListItem>
+<ListItem><Paragraph>增加了许多新的属性</Paragraph></ListItem>
+<ListItem><Paragraph>增加了新的战利品表函数</Paragraph></ListItem>
+<ListItem><Paragraph>增加了新的进度谓词</Paragraph></ListItem>
+<ListItem><Paragraph>增加了新标签</Paragraph></ListItem>
+<ListItem><Paragraph>配方结果现在可以指定组件数据</Paragraph></ListItem>
+<ListItem><Paragraph>为旗帜图案和狼变体增加了数据驱动注册器</Paragraph></ListItem>
+<ListItem><Paragraph>命令的粒子展示以及区域效果云更改</Paragraph></ListItem>
+</List></ListItem>
+<ListItem><Paragraph>资源包版本现在为 32</Paragraph><List>
+<ListItem><Paragraph>重命名纹理与模型 <TextBox Style="{StaticResource InlineCode}">scute</TextBox> 为 <TextBox Style="{StaticResource InlineCode}">turtle_scute</TextBox></Paragraph></ListItem>
+<ListItem><Paragraph>为新特性增加了纹理和模型</Paragraph></ListItem>
+<ListItem><Paragraph>对字体的更改</Paragraph></ListItem>
+<ListItem><Paragraph>对着色器的更改</Paragraph></ListItem>
+</List></ListItem>
+<ListItem><Paragraph>为自定义服务器增加了 transfer 以及 cookie 包，用于将玩家转移到其它服务器以及在客户端存储信息</Paragraph></ListItem>
+<ListItem><Paragraph>增加了在专用服务器上使用更快的区域文件压缩算法的选项</Paragraph></ListItem>
+<ListItem><Paragraph>为第三方服务器增加了保留区域文件压缩 id 以用于自定义压缩实现</Paragraph></ListItem>
+<ListItem><Paragraph>对自定义世界的更改</Paragraph></ListItem>
+<ListItem><Paragraph>改善了服务器 TPS 调试图表</Paragraph></ListItem>
+<ListItem><Paragraph>允许服务器操作员查看专用服务器 TPS 调试图标</Paragraph></ListItem>
+<ListItem><Paragraph>为独立区块读取以及写入增加了 JFR 事件</Paragraph></ListItem>
+</List><Paragraph Style="{StaticResource H3}">实验性特性</Paragraph><Paragraph>    本次更新包括了即将到来的 1.21 的实验性特性，你可以在创建世界时打开实验性特性开关来体验这些新内容。</Paragraph><Paragraph>    本次更新主要加入了近几个快照积累的对试炼密室的更改，包含战利品重锤、旋风棒、不祥之瓶等，以及新的挑战：不祥试炼系列。</Paragraph><List>
+<ListItem><Paragraph>增加了重锤</Paragraph></ListItem>
+<ListItem><Paragraph>增加了物品形式的旋风棒</Paragraph></ListItem>
+<ListItem><Paragraph>对旋风人的更改</Paragraph></ListItem>
+<ListItem><Paragraph>增加了物品形式的风弹</Paragraph></ListItem>
+<ListItem><Paragraph>增加了宝库方块</Paragraph></ListItem>
+<ListItem><Paragraph>重新设计了不祥之兆以适配不祥事件</Paragraph></ListItem>
+<ListItem><Paragraph>增加了不祥之瓶</Paragraph></ListItem>
+<ListItem><Paragraph>增加了不祥试炼刷怪笼</Paragraph></ListItem>
+<ListItem><Paragraph>增加了不祥宝库</Paragraph></ListItem>
+<ListItem><Paragraph>增加了不祥试炼钥匙</Paragraph></ListItem>
+<ListItem><Paragraph>增加了新生物沼骸</Paragraph></ListItem>
+<ListItem><Paragraph>增加了 6 种新的生物效果</Paragraph></ListItem>
+</List>
+</FlowDocument>
+</FlowDocumentScrollViewer>
+</StackPanel>
+</local:MyCard>
+</StackPanel>
