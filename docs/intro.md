@@ -12,7 +12,7 @@ SnowCherry即雪之樱，俗称雪服，原HaoServer后经“重生计划”更�
 
 (请点击一侧的目录开始阅读文档)
 
-:::tips
+:::tip
 想要加入我们共同编辑文档吗？
 请将您的服务器内ID、GithubID以及QQ号
 通过`邮件`的方式发送给`SnowCherryTeam@outlook.com`请加入我们吧！
