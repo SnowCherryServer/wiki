@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 1
 ---
 # 欢迎阅读本文档
 
