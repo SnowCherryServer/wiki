@@ -21,9 +21,9 @@ sidebar_position: 1
 
 
 
-> [!TIP]
+> :::tip
 > 想要加入我们共同编辑文档吗？
-请将您的服务器内 ID、Github ID 以及 QQ 号通过 邮件 的方式发送给`SnowCherryTeam@outlook.com`请加入我们吧！
+请将您的服务器内 ID、Github ID 以及 QQ 号通过 邮件 的方式发送给`SnowCherryTeam@outlook.com`请加入我们吧！:::
 
 
 
