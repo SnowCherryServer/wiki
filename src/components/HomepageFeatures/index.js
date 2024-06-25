@@ -32,11 +32,18 @@ const FeatureList = [
     ),
   },
   {
-    title: '特别鸣谢',
+    title: 'Wiki编写',
     description: (
       <>
-        菱洲阿龙 - 文档编写
-        Vercel - 网站提供
+        菱洲阿龙 | 小浩
+      </>
+    ),
+  },
+  {
+    title: '技术支持',
+    description: (
+      <>
+        小宏 | 小浩
       </>
     ),
   },
