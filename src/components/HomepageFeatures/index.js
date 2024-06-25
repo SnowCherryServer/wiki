@@ -31,6 +31,15 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: '特别鸣谢',
+    description: (
+      <>
+        菱洲阿龙 - 文档编写
+        Vercel - 网站提供
+      </>
+    ),
+  },
 ];
 
 function Feature({title, description}) {
