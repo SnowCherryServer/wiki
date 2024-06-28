@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
 ---
-# 欢迎阅读本文档  ![github](https://img.shields.io/badge/Wiki-1.0.0-green.svg)
+# 欢迎阅读本文档  
+
+(当前WIKI版本 ![github](https://img.shields.io/badge/Wiki-1.0.0-green.svg))
 
 欢迎！👋
 > (请点击一侧的目录开始阅读文档)
