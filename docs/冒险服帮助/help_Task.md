@@ -5,11 +5,11 @@
 ## 进入冒险服
 > 屏幕右侧会显示出你当前的任务：`新手任务`
 
-![任务](_images/新手任务.png "新手任务展示")
+![任务](_images/新手任务.png)
 
 > 鼠标左键左侧 NPC `新人向导`
 
-![向导](https://github.com/Monostar14/wiki/blob/main/docs/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/_images/%E6%96%B0%E4%BA%BA%E5%90%91%E5%AF%BC.png)
+![任务](_images/新人向导.png)
 
 > 与其对话完毕跟随前方的**白色大箭头**来到主城并完成**新手任务** ，屏幕右侧将显示正常信息
 
