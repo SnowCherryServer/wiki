@@ -12,27 +12,27 @@ const config = {
     // 标题前缀
     titlePrefix: "主页",
     // 开始按钮文字
-    start: "开始阅读 ♂",
+    start: "快速开始 🥵",
   },
 
   markdown: {
     mermaid: true,
   },
 
-  title: 'SnowCherry Wiki',
-  tagline: '一群鸽子编写的文档',
+  title: '笨蛋 MC 开服教程',
+  tagline: '一群笨蛋们写的 Minecraft 开服教程',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://wiki.snowymc.top',
+  url: 'https://yizhan.wiki',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: process.env.BASE_URL ?? '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'SnowCherryServer', // Usually your GitHub org/user name.
-  projectName: 'SnowyWiki', // Usually your repo name.
+  organizationName: 'postyizhan', // Usually your GitHub org/user name.
+  projectName: '笨蛋式指南', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -54,7 +54,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/SnowCherryServer/wiki/tree/main',
+          editUrl: 'https://github.com/postyizhan/NitWikit/tree/main',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -72,7 +72,7 @@ const config = {
         id: 'docs-java',
         path: 'docs-java',
         routeBasePath: 'Java',
-        editUrl: 'https://github.com/SnowCherryServer/wiki/tree/main',
+        editUrl: 'https://github.com/postyizhan/NitWikit/tree/main',
         sidebarPath: require.resolve('./sidebars.js'),
         editCurrentVersion: true,
         showLastUpdateAuthor: true,
@@ -85,7 +85,7 @@ const config = {
         id: 'docs-bedrock',
         path: 'docs-bedrock',
         routeBasePath: 'Bedrock',
-        editUrl: 'https://github.com/SnowCherryServer/wiki/tree/main',
+        editUrl: 'https://github.com/postyizhan/NitWikit/tree/main',
         sidebarPath: require.resolve('./sidebars.js'),
         editCurrentVersion: true,
         showLastUpdateAuthor: true,
@@ -111,31 +111,36 @@ const config = {
       },
       image: 'img/docusaurus-social-card.jpg',
       metadata: [
-        { name: 'SnowyWiki', content: '一群鸽子编写的文档' },
-        { name: 'SnowCherry', content: '一群鸽子编写的文档' },
+        { name: '开服教程', content: '一群笨蛋们写的 Minecraft 开服教程' },
+        { name: 'MC教程', content: '一群笨蛋们写的 Minecraft 开服教程' },
       ],
       navbar: {
-        title: 'SnowyWiki',
+        title: 'NitWikit',
         logo: {
           alt: 'Logo',
-          src: 'img/1-logo.png',
+          src: 'img/book.png',
         },
         hideOnScroll: false,
         items: [
           {
-            type: 'docSidebar',
+            type: 'doc',
             docId: 'intro',
-            sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '原版服',
-            docsPluginId: 'docs-outer'
+            label: '通用',
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '内服',
-            docsPluginId: 'docs-inner'
+            label: 'Java',
+            docsPluginId: 'docs-java'
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Bedrock',
+            docsPluginId: 'docs-bedrock'
           },
           // 搜索框
           {
@@ -144,7 +149,7 @@ const config = {
           },
           // GitHub
           {
-            href: "https://github.com/SnowCherryServer/wiki",
+            href: "https://github.com/postyizhan/NitWikit",
             className: "header-github-link",
             position: "right",
           },
@@ -168,7 +173,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/SnowCherryServer/wiki',
+                href: 'https://github.com/postyizhan/NitWikit',
               },
             ],
           },
@@ -177,7 +182,7 @@ const config = {
             items: [
               {
                 label: 'QQ群',
-                href: 'https://qm.qq.com/q/YRVtpEwVCa',
+                href: 'https://qm.qq.com/q/dENGavSflK',
               },
             ],
           },
@@ -185,12 +190,12 @@ const config = {
             title: '友链',
             items: [
               {
-                label: 'Zitbbs',
-                href: 'http://www.zitbbs.com',
+                label: '服主资源导航页',
+                href: 'http://nav.yumc.fun',
               },
               {
-                label: 'Baidu',
-                href: 'https://baidu.com',
+                label: 'CSKB 日冕知识库',
+                href: 'https://kb.corona.studio',
               },
             ],
           },
@@ -216,7 +221,7 @@ const config = {
         // Public API key: it is safe to commit it
         apiKey: '4bb3573e59f2c49f30f057ce54edab3f',
 
-        indexName: 'SnowyMC',
+        indexName: 'yizhan',
 
       },
     }),
