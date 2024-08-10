@@ -4,29 +4,46 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '「简单」',
-    Svg: require('@site/static/img/grass.svg').default,
+    title: '简单高效',
     description: (
       <>
-        手把手教你,甚至双击就可以完成
+        一键精准定位查看需要的内容
+        文档由官方与社区共同维护内容精准
+        具有的参考价值极大
       </>
     ),
   },
   {
-    title: '「详细」',
-    Svg: require('@site/static/img/crafting-table.svg').default,
+    title: '文档开放',
     description: (
       <>
-        充实的内容,让你新手变大佬
+        社区成员(玩家)共同维护本文档
+        加入社区共同维护本文档在这里留下你的足迹
       </>
     ),
   },
   {
-    title: '「现代」',
-    Svg: require('@site/static/img/furnace.svg').default,
+    title: '内容详细',
     description: (
       <>
-        基于 MC 社区最新内容编写,保持更新
+        本文档内容最为详细最为精准
+        并且内容简单易懂及易获取需要的信息
+      </>
+    ),
+  },
+  {
+    title: 'Wiki编写',
+    description: (
+      <>
+        菱洲阿龙 | 小浩
+      </>
+    ),
+  },
+  {
+    title: '技术支持',
+    description: (
+      <>
+        小宏 | 小浩
       </>
     ),
   },
